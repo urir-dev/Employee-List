@@ -1,0 +1,46 @@
+<!-- <h2>{{employee.name | uppercase }} </h2>
+
+<div class="details">
+
+<h4>Details</h4>
+
+<div>
+    Id: {{employee.id}}
+</div>
+<div>
+    <label for="employeeName">name:</label>
+    <input [(ngModel)]="employee.name" id="employeeName" placeholder="name"/>
+</div>
+<div>
+    Job: {{employee.job}}
+</div>
+
+</div> -->
+
+<!-- <h2 >Our Staff</h2> -->
+<ul class="Employees">
+<!--   <div class="segment">
+    <div class="invisible">
+        <img class="employeeImage" >
+    </div> 
+    <div>
+      <label class="coloumHead">Name</label>
+    </div> 
+    <div>
+       <label class="coloumHead">Role</label>
+    </div> 
+  </div> -->
+  <li  *ngFor="let employee of employees" >
+    <div class="segment">
+        <div>
+            <img src={{employee.image}} class="employeeImage">
+        </div> 
+        <div class="mid">
+            {{employee.name}}
+        </div> 
+        <div class="mid">
+            {{employee.job}}
+        </div> 
+    </div>
+  </li>
+</ul>
