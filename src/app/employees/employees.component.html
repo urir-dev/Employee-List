@@ -18,29 +18,69 @@
 </div> -->
 
 <!-- <h2 >Our Staff</h2> -->
-<ul class="Employees">
-<!--   <div class="segment">
-    <div class="invisible">
-        <img class="employeeImage" >
-    </div> 
+
+<div clase="allForm">
+
     <div>
-      <label class="coloumHead">Name</label>
-    </div> 
-    <div>
-       <label class="coloumHead">Role</label>
-    </div> 
-  </div> -->
-  <li  *ngFor="let employee of employees" >
-    <div class="segment">
-        <div>
-            <img src={{employee.image}} class="employeeImage">
-        </div> 
-        <div class="mid">
-            {{employee.name}}
-        </div> 
-        <div class="mid">
-            {{employee.job}}
-        </div> 
+        <ul class="Employees">
+        <!--   <div class="segment">
+            <div class="invisible">
+                <img class="employeeImage" >
+            </div> 
+            <div>
+            <label class="coloumHead">Name</label>
+            </div> 
+            <div>
+            <label class="coloumHead">Role</label>
+            </div> 
+        </div> -->
+        <li  *ngFor="let employee of employees" (click)="onSelect(employee)">
+
+            <div [class.selected]="employee === selectedEmployee">
+                <div class="segment">
+                    <div>
+                        <img src={{employee.image}} class="employeeImage">
+                    </div> 
+                    <div class="mid">
+                        {{employee.name}}
+                    </div> 
+                    <div class="mid">
+                        {{employee.job}}
+                    </div> 
+                </div>
+            </div>
+
+            <div *ngIf="selectedEmployee">
+
+                <div *ngIf="selectedEmployee.id == employee.id" class="visiblebox">
+
+                    <div class="detailsBox">
+                        <div class="coloumHead">
+                            {{selectedEmployee.name | uppercase}}
+                        </div>
+                        <div class="twoGrid">
+                            <label class = "greened" >id:</label>
+                            <label class = "labelBox" > {{selectedEmployee.id}}</label>
+                        </div>
+                        <div class="twoGrid">
+                            <label class = "greened">Name:</label>
+                            <input class="inputBox" [(ngModel)]="selectedEmployee.name" placeholder="name"/>
+                        </div>
+                        <div class="twoGrid"> 
+                            <label class = "greened">Role:</label>
+                            <input class="inputBox" [(ngModel)]="selectedEmployee.job" placeholder="job"/>
+                        </div>
+                    </div>
+
+                </div>
+        
+            </div>
+
+
+        </li>
+        </ul>
     </div>
-  </li>
-</ul>
+
+
+</div>
+

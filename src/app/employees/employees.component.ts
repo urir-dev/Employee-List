@@ -9,8 +9,9 @@ import { EMPLOYEES } from '../fake-employees';
 
 })
 
-
 export class EmployeesComponent implements OnInit {
+
+  selectedEmployee: Employee;
 
 /*   employee: Employee = {
     id: 1,
@@ -25,5 +26,13 @@ export class EmployeesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+onSelect(employee: Employee): void {
+  this.selectedEmployee = employee;
+}
+
+/* onDblClick(employee: Employee): void {
+  this.selectedEmployee = employee;
+} */
 
 }
