@@ -28,7 +28,12 @@ export class EmployeesComponent implements OnInit {
   }
 
 onSelect(employee: Employee): void {
+
+  const detailsBox = document.getElementsByClassName('detailsBox')[0];
+
   this.selectedEmployee = employee;
+  detailsBox.classList.add('visiblebox');
+  detailsBox.classList.remove('visiblebox');
 }
 
 /* onDblClick(employee: Employee): void {

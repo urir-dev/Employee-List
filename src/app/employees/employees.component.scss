@@ -122,12 +122,11 @@
 
 }
 
-.invisiblebox
+.visiblebox
 {
 
   transition-timing-function: ease-in;
   transition: opacity 2s;
-  visibility:visible;
   opacity: 1;
 
 }
