@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
-import { EMPLOYEES } from '../fake-employees';
+// import { EMPLOYEES } from '../fake-employees';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-employees',
@@ -19,22 +20,49 @@ export class EmployeesComponent implements OnInit {
     job: 'Triangularist'
   }; */
 
-  employees = EMPLOYEES;
+  // employees = EMPLOYEES;
+  employees: Employee[];
 
 
-  constructor() { }
+  constructor(private employeeService: EmployeeService) { }
 
   ngOnInit(): void {
+
+    this.getEmployees();
+
   }
 
-onSelect(employee: Employee): void {
+  onSelect(employee: Employee): void {
 
-  const detailsBox = document.getElementsByClassName('detailsBox')[0];
+    const detailsBox = document.getElementsByClassName('detailsBox')[0];
+    const listItem = document.getElementsByClassName('selected')[0];
 
-  this.selectedEmployee = employee;
-  detailsBox.classList.add('visiblebox');
-  detailsBox.classList.remove('visiblebox');
-}
+    if (this.selectedEmployee !== employee) {
+
+      this.selectedEmployee = employee;
+      detailsBox.classList.add('visiblebox');
+      listItem.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
+
+    }
+    else
+    {
+
+      this.selectedEmployee = null;
+      detailsBox.classList.remove('visiblebox');
+      listItem.classList.remove('selected');
+
+    }
+
+  }
+
+  getEmployees(): void {
+    this.employees = this.employeeService.getEmployees();
+  }
+
+  goToCard(employee: Employee): void {
+
+    console.log('got to card');
+  }
 
 /* onDblClick(employee: Employee): void {
   this.selectedEmployee = employee;

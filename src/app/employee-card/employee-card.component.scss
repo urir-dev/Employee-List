@@ -1,9 +1,9 @@
-  .segment{
+.segment{
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 5vh;
-    grid-gap: 4vh;
+    grid-gap: 3vh;
 
 
   }
@@ -59,7 +59,7 @@
     background-color: rgb(243, 241, 241);
     box-shadow: rgb(156, 182, 207) 5px 5px 6px;
     border: 2px;
-    width: 20vw;
+    width: 22vw;
 
   }
 
@@ -81,10 +81,10 @@
 
 .inputBox{
 
-  font-size: 150%;
+  font-size: 130%;
   border-radius: 10px;
   text-align: center;
-  width: 8vw;
+  width: 10vw;
   height: 4vh;
 
 
@@ -92,14 +92,14 @@
 
 .labelBox{
 
-  font-size: 150%;
+  font-size: 130%;
   color:  rgb(145, 145, 145);
   background-color: rgb(231, 230, 230);
   border-radius: 10px;
   border:solid;
   text-align: center;
   padding: auto;
-  width: 8vw;
+  width: 10vw;
   height: 4vh;
 }
 

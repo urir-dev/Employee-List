@@ -34,9 +34,9 @@
             <label class="coloumHead">Role</label>
             </div> 
         </div> -->
-        <li  *ngFor="let employee of employees" (click)="onSelect(employee)">
+        <li  *ngFor="let employee of employees" >
 
-            <div [class.selected]="employee === selectedEmployee">
+            <div class="listItem" [class.selected]="employee === selectedEmployee" [class.notSelected]="employee !== selectedEmployee" (click)="onSelect(employee)">
                 <div class="segment">
                     <div>
                         <img src={{employee.image}} class="employeeImage">
@@ -50,12 +50,14 @@
                 </div>
             </div>
 
-            <div *ngIf="selectedEmployee">
+            <app-employee-card [employee]="selectedEmployee" *ngIf="selectedEmployee && selectedEmployee.id == employee.id"></app-employee-card>
+
+<!--             <div *ngIf="selectedEmployee">
 
                 <div class="detailsWrapper" *ngIf="selectedEmployee.id == employee.id">
 
                     <div class="detailsBox">
-                        <div class="coloumHead">
+                        <div class="coloumHead" (click)="goToCard(employee)">
                             {{selectedEmployee.name | uppercase}}
                         </div>
                         <div class="twoGrid">
@@ -74,11 +76,12 @@
 
                 </div>
         
-            </div>
+            </div> -->
 
 
         </li>
         </ul>
+
     </div>
 
 

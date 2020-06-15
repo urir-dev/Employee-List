@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { EmployeeCardComponent } from './employee-card/employee-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    EmployeeCardComponent
   ],
   imports: [
     BrowserModule,
@@ -19,4 +21,4 @@ import { EmployeesComponent } from './employees/employees.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
