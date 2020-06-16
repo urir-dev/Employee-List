@@ -38,7 +38,7 @@
   .allForm{
 
     display:grid;
-    grid-template-rows:1fr 1fr;
+    // grid-template-rows:1fr 1fr;
     
   }
 
@@ -49,11 +49,11 @@
   .nav-grid
   {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap:3px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:2px;
     margin-top: 4vh;
     margin-bottom: 2vh;
-    background-color: rgb(231, 253, 253);
+    background-color: rgb(240, 252, 252);
 
   }
 

@@ -1,9 +1,10 @@
   .segment{
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: 5vh;
-    grid-gap: 4vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 10px;
+    gap: 20px;
+    align-items:start;
 
 
   }
@@ -21,7 +22,9 @@
 
   
   ul {
+    width: 70%;
     list-style-type: none;
+    text-align: left;
   }
 
   .invisible
@@ -43,6 +46,7 @@
 
     margin-top: 4vh;
     font-size: 150%;
+    min-width: 100px;
 
 
   }

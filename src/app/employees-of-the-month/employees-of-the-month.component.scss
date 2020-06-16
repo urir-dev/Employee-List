@@ -24,6 +24,7 @@
   }
   .grid {
     margin: 0;
+    object-fit: scale-down;
   }
   .col-1-4 {
     width: 25%;
@@ -68,8 +69,7 @@
 
   .employeeDetailsImage{
 
-    height: 40vh;
-    width: 40vh;
+    width: 100%;
     border: solid;
     border-color:rgb(49, 135, 138);
     border-radius: 20px;
