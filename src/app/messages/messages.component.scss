@@ -6,6 +6,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     position: sticky;
+    padding:0;
     bottom: 0;
     left: 0;
     opacity: 0.5;
@@ -21,3 +22,33 @@
     margin:2vh;
 
 }
+
+
+.coloumHead {
+    color: rgb(0, 0, 0);
+    box-shadow:dimgray 10px 2px 10px;
+    background-color: rgb(236, 236, 236);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-size: 150%;
+    width: 100%;
+    margin-bottom: 1px;
+    
+  }
+
+  .button{
+
+    font-size: 130%;
+    border-radius: 10px;
+    text-align: center;
+    width: 10%;
+    min-width: 100px;
+    height: 4vh;
+    margin-left: 45%;
+    margin-right: 45%;
+    background-color: white;
+    color: #000;
+    cursor: hover;
+  
+  }
+

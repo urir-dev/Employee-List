@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class MessageService {
   messages: string[] = [];
+  message: string;
 
   add(message: string) {
     this.messages.push(message);
@@ -13,4 +14,9 @@ export class MessageService {
   clear() {
     this.messages = [];
   }
+
+  show() {
+    this.message = this.messages.toString();
+  }
+
 }

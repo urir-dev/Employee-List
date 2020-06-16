@@ -1,9 +1,12 @@
   .segment{
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: start;
+    margin: 5px;
     gap: 20px;
+    width: 30%;
+    padding-right: 70%;
     align-items:start;
 
 
@@ -22,9 +25,10 @@
 
   
   ul {
-    width: 70%;
+   /*  width: 70%;
+    padding-right: 50%; */
     list-style-type: none;
-    text-align: left;
+    // text-align: left;
   }
 
   .invisible

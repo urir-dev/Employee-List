@@ -4,7 +4,7 @@
     background-color: rgb(243, 243, 243);
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 250%;
-    margin:20px;
+    margin-bottom:30px;
   }
   h2, h3 {
     color: rgb(46, 71, 73);
@@ -50,7 +50,7 @@
   {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap:2px;
+    gap:1px;
     margin-top: 4vh;
     margin-bottom: 2vh;
     background-color: rgb(240, 252, 252);
@@ -66,12 +66,13 @@
     text-decoration: none;
     border-radius: 5px;
     width: 10vw;
-    min-width: 100px;
-    padding: 10px;
+    max-height: 120px;
+    min-width: 170px;
+    padding: 5px;
     font-family:fantasy;
     text-align: center;
-    font-size: 100%;
-    margin: auto;
+    font-size: 90%;
+    margin: 2px;
 
   }
   .linkButton:hover {
@@ -86,4 +87,24 @@
     min-width: 120px;
     transition-timing-function: ease-in;
     transition: width 2s ;
+  }
+
+  .rightWrapper
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+
+  .right
+  {
+    
+    min-width: 200px;
+
   }

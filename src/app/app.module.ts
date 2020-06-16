@@ -9,6 +9,7 @@ import { EmployeeCardComponent } from './employee-card/employee-card.component';
 import { MessagesComponent } from './messages/messages.component';
 import { EmployeesOfTheMonthComponent } from './employees-of-the-month/employees-of-the-month.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { EditorComponent } from './editor/editor.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
     MessagesComponent,
     EmployeesOfTheMonthComponent,
     EmployeeDetailsComponent,
+    EditorComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,9 @@
-<div class='fix' *ngIf="messageService.messages.length">
+<div class="fix" *ngIf="messageService.messages.length">
 
-    <h2>Messages</h2>
+    <div class="coloumHead">Messages</div>
     <div class="margin" *ngFor='let message of messageService.messages'> {{message}} </div>
-    <button class="clear"
-    (click)="messageService.clear()">clear</button>
   
-  </div>
+</div>
+ <div *ngIf="messageService.messages.length">
+    <button class="clear button" (click)="messageService.clear()">clear</button>
+</div>
