@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Employee } from '../employee';
 // import { EMPLOYEES } from '../fake-employees';
 import { EmployeeService } from '../employee.service';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-employees',
@@ -24,7 +25,7 @@ export class EmployeesComponent implements OnInit {
   employees: Employee[];
 
 
-  constructor(private employeeService: EmployeeService) { }
+  constructor(private employeeService: EmployeeService, private messageService: MessageService) { }
 
   ngOnInit(): void {
 
@@ -39,6 +40,8 @@ export class EmployeesComponent implements OnInit {
 
     if (this.selectedEmployee !== employee) {
 
+      this.messageService.add(`Selected Employee id=${employee.id}`);
+
       this.selectedEmployee = employee;
       detailsBox.classList.add('visiblebox');
       listItem.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
@@ -46,6 +49,8 @@ export class EmployeesComponent implements OnInit {
     }
     else
     {
+
+      this.messageService.add(`Closed Employee id=${employee.id}`);
 
       this.selectedEmployee = null;
       detailsBox.classList.remove('visiblebox');
@@ -56,7 +61,9 @@ export class EmployeesComponent implements OnInit {
   }
 
   getEmployees(): void {
-    this.employees = this.employeeService.getEmployees();
+    // this.employees = this.employeeService.getEmployees();
+    this.employeeService.getEmployees()
+    .subscribe(employees => this.employees = employees);
   }
 
   goToCard(employee: Employee): void {

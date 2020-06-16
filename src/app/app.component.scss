@@ -45,3 +45,45 @@
   html{
     scroll-behavior: smooth;
   }
+
+  .nav-grid
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap:3px;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    background-color: rgb(231, 253, 253);
+
+  }
+
+  .linkButton
+  {
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+    box-shadow: rgb(201, 201, 201) 2px 2px 3px;
+    border: solid 1px rgb(56, 141, 156);
+    text-decoration: none;
+    border-radius: 5px;
+    width: 10vw;
+    min-width: 100px;
+    padding: 10px;
+    font-family:fantasy;
+    text-align: center;
+    font-size: 100%;
+    margin: auto;
+
+  }
+  .linkButton:hover {
+    background-color: rgb(56, 141, 156);
+    color: rgb(255, 255, 255);
+  }
+
+  .linkButton:active{
+    background-color: rgb(219, 237, 245);
+    color: rgb(0, 0, 0);
+    width: 11vw;
+    min-width: 120px;
+    transition-timing-function: ease-in;
+    transition: width 2s ;
+  }

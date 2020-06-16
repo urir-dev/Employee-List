@@ -1,0 +1,28 @@
+<div class="detailsWrapper" *ngIf="employee">
+
+    <div class="detailsBox">
+        <div class="coloumHead">
+            {{employee.name | uppercase}}
+        </div>
+        <div class="twoGridDetails">
+            <div>
+                <img src={{employee.image}} class="employeeDetailsImage">
+            </div>
+            <div class="detailsGrid">
+                <div class="twoGrid">
+                    <label class = "greened" >id:</label>
+                    <label class = "labelBox" > {{employee.id}}</label>
+                </div>
+                <div class="twoGrid">
+                    <label class = "greened">Name:</label>
+                    <input class="inputBox" [(ngModel)]="employee.name" placeholder="name"/>
+                </div>
+                <div class="twoGrid"> 
+                    <label class = "greened">Role:</label>
+                    <input class="inputBox" [(ngModel)]="employee.job" placeholder="job"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

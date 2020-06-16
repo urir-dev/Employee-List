@@ -1,9 +1,11 @@
 <div class="detailsWrapper" *ngIf="employee">
 
     <div class="detailsBox">
-        <div class="coloumHead">
-            {{employee.name | uppercase}}
-        </div>
+        <a class="link" routerLink="/details/{{employee.id}}">
+            <div class="coloumHead">
+                {{employee.name | uppercase}}
+            </div>
+        </a>
         <div class="twoGrid">
             <label class = "greened" >id:</label>
             <label class = "labelBox" > {{employee.id}}</label>
