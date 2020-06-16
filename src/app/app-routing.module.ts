@@ -5,6 +5,7 @@ import { EmployeesComponent } from './employees/employees.component';
 import { EmployeesOfTheMonthComponent } from './employees-of-the-month/employees-of-the-month.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EditorComponent } from './editor/editor.component';
+import { StoryComponent } from './story/story.component';
 
 const routes: Routes = [
 
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'employees', component: EmployeesComponent },
   { path: 'employeesOfTheMonth', component: EmployeesOfTheMonthComponent },
   { path: 'Editor', component: EditorComponent },
-  { path: 'details/:id', component: EmployeeDetailsComponent }
+  { path: 'details/:id', component: EmployeeDetailsComponent },
+  { path: 'story', component: StoryComponent }
 
 ];
 

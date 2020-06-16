@@ -10,6 +10,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { EmployeesOfTheMonthComponent } from './employees-of-the-month/employees-of-the-month.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EditorComponent } from './editor/editor.component';
+import { StoryComponent } from './story/story.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { EditorComponent } from './editor/editor.component';
     EmployeesOfTheMonthComponent,
     EmployeeDetailsComponent,
     EditorComponent,
+    StoryComponent,
   ],
   imports: [
     BrowserModule,
