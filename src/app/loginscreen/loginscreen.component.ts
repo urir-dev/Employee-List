@@ -10,7 +10,9 @@ import { USERLIST } from '../user-list';
 })
 export class LoginscreenComponent implements OnInit {
 
-  @Input() user: User;
+  @Input() user: string;
+  @Input() password: string;
+
 
   constructor(
     private appComponent: AppComponent,
@@ -23,7 +25,7 @@ export class LoginscreenComponent implements OnInit {
 
   loginButton(): void {
 
-    this.appComponent.getInformation(this.user.userName, this.user.passWord); {
+    this.appComponent.getInformation(this.user, this.password); {
 
     }
 

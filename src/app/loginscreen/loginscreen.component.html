@@ -1,18 +1,33 @@
-<div class="detailsWrapper">
+<div class="gridmid">
 
     <div class="detailsBox">
+
+        <div class="coloumHead">
+            Welcome guest...
+        </div>
+        
         <div class="twoGrid">
-            <label class = "greened">Name:</label>
-            <input class="inputBox" [ngModel]="user.userName" placeholder="User Name"/>
+            <div>
+                <label class = "greened">Name:</label>
+            </div>
+            <div>
+                <input class="inputBox" [ngModel]="user" placeholder="User Name"/>
+            </div>
         </div>
         <div class="twoGrid"> 
-            <label class = "greened">Password:</label>
-            <input class="inputBox" [ngModel]="user.passWord" placeholder="Password"/>
+            <div>
+                <label class = "greened">Password:</label>
+            </div>
+            <div>
+                <input type='password' class="inputBox" [ngModel]="password" placeholder="Password"/>
+            </div>
+        </div>
+
+        <div class="buttonWrapper">
+            <button class="submitBTN, button" (click)="loginButton()">Log In</button>
         </div>
     </div>
 
-    <div>
-        <button class="submitBTN" (click)="loginButton()">Log In</button>
-    </div>
 
+    <div></div>
 </div>

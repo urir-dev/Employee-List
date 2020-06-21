@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { User } from './user';
 import { USERLIST } from './user-list';
+import { MessageService } from './message.service';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,9 @@ import { USERLIST } from './user-list';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  constructor(private messageService: MessageService) { }
+
   title = 'Employee List';
 
   public userName: string;
@@ -16,7 +20,7 @@ export class AppComponent {
 
   user: User[];
 
-  getInformation(userInput: string, passInput: string) {
+  public getInformation(userInput, passInput) {
 
     let userOfList: User;
 
@@ -24,6 +28,7 @@ export class AppComponent {
     if (userOfList !== undefined) {
       this.isLoggedIn = true;
       this.userName =  userOfList.userName;
+      this.messageService.add(this.userName + 'Logged in successfully.' );
     }
     else {
       this.isLoggedIn = false;
