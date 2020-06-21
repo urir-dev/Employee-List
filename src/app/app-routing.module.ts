@@ -9,7 +9,7 @@ import { StoryComponent } from './story/story.component';
 
 const routes: Routes = [
 
-  { path: '', redirectTo: '/employeesOfTheMonth', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'employees', component: EmployeesComponent },
   { path: 'employeesOfTheMonth', component: EmployeesOfTheMonthComponent },
   { path: 'Editor', component: EditorComponent },

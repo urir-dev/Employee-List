@@ -60,30 +60,32 @@
 
   .linkButton
   {
-    background-color: rgb(245, 245, 245);
+    // background-color: rgb(245, 245, 245);
     color: rgb(0, 0, 0);
-    box-shadow: rgb(201, 201, 201) 2px 2px 3px;
-    border: solid 1px rgb(56, 141, 156);
+    // box-shadow: rgb(201, 201, 201) 2px 2px 3px;
+    // border: solid 1px rgb(56, 141, 156);
     text-decoration: none;
     border-radius: 5px;
     width: 10vw;
     max-height: 120px;
+    font-weight: bold;
     min-width: 170px;
     padding: 5px;
-    font-family:fantasy;
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
-    font-size: 90%;
+    font-size: 150%;
     margin: 2px;
 
   }
   .linkButton:hover {
-    background-color: rgb(56, 141, 156);
-    color: rgb(255, 255, 255);
+    // background-color: rgb(56, 141, 156);
+    color: rgb(9, 87, 80);
   }
 
   .linkButton:active{
-    background-color: rgb(219, 237, 245);
-    color: rgb(0, 0, 0);
+    // background-color: rgb(219, 237, 245);
+    color: rgb(32, 148, 123);
+    font-weight: bold;
     width: 11vw;
     min-width: 120px;
     transition-timing-function: ease-in;

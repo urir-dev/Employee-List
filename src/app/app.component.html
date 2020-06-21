@@ -5,6 +5,9 @@
         </div>
     </div>
 </h1>
+<div *ngIf="isLoggedIn">
+    <app-greetingline></app-greetingline>   
+</div>
 <nav>
     <div class="nav-grid">
         <a class="linkButton" routerLink="/employees">Our Staff</a>
@@ -13,6 +16,18 @@
         <a class="linkButton" routerLink="/story">Our Story</a>
     </div>
  </nav>
-<router-outlet></router-outlet>
+
+ <div *ngIf="isLoggedIn">
+
+    <router-outlet></router-outlet>
+
+ </div>
+
+ <div *ngIf="isLoggedIn == false">
+
+    <app-loginscreen></app-loginscreen>
+
+ </div>
+
 <!-- <app-employees></app-employees> -->
 <app-messages></app-messages>

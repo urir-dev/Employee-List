@@ -11,6 +11,8 @@ import { EmployeesOfTheMonthComponent } from './employees-of-the-month/employees
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EditorComponent } from './editor/editor.component';
 import { StoryComponent } from './story/story.component';
+import { LoginscreenComponent } from './loginscreen/loginscreen.component';
+import { GreetinglineComponent } from './greetingline/greetingline.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { StoryComponent } from './story/story.component';
     EmployeeDetailsComponent,
     EditorComponent,
     StoryComponent,
+    LoginscreenComponent,
+    GreetinglineComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,4 +35,7 @@ import { StoryComponent } from './story/story.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+
+
+}

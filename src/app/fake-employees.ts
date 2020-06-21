@@ -1,7 +1,7 @@
 import { Employee } from './employee';
 
 export const EMPLOYEES: Employee[] = [
-  { id: 110, name: 'George The Frog', job: 'Owner',image: 'assets/Frog.jpg'},
+  { id: 110, name: 'George The Frog', job: 'Owner', image: 'assets/Frog.jpg'},
   { id: 120, name: 'Mahabutu Kamba', job: 'Active Board Member', image: 'assets/Worker.jpg'},
   { id: 122, name: 'Mahina Kamba', job: 'Active Board Member', image: 'assets/WorkerWomen.jpg'},
   { id: 130, name: 'Lapis Lazuli', job: 'CEO', image: 'assets/Worker.jpg'},

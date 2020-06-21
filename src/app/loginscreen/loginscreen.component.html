@@ -1,0 +1,18 @@
+<div class="detailsWrapper">
+
+    <div class="detailsBox">
+        <div class="twoGrid">
+            <label class = "greened">Name:</label>
+            <input class="inputBox" [ngModel]="user.userName" placeholder="User Name"/>
+        </div>
+        <div class="twoGrid"> 
+            <label class = "greened">Password:</label>
+            <input class="inputBox" [ngModel]="user.passWord" placeholder="Password"/>
+        </div>
+    </div>
+
+    <div>
+        <button class="submitBTN" (click)="loginButton()">Log In</button>
+    </div>
+
+</div>
