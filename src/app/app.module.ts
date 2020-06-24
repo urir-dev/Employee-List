@@ -13,6 +13,8 @@ import { EditorComponent } from './editor/editor.component';
 import { StoryComponent } from './story/story.component';
 import { LoginscreenComponent } from './loginscreen/loginscreen.component';
 import { GreetinglineComponent } from './greetingline/greetingline.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { GreetinglineComponent } from './greetingline/greetingline.component';
     StoryComponent,
     LoginscreenComponent,
     GreetinglineComponent,
+    ProductsComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,89 @@
+/* DashboardComponent's private CSS styles */
+[class*='col-'] {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  [class*='col-']:last-of-type {
+    padding-right: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  h4 {
+    position: relative;
+  }
+  .grid {
+    margin: 0;
+    object-fit: scale-down;
+  }
+  .col-1-4 {
+    width: 25%;
+    text-align: center;
+  }
+  .module {
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+    max-height: 150px;
+    min-width: 120px;
+    background-color: #94bac5;
+    box-shadow: rgb(158, 158, 158) 1px 1px 4px;
+    border-radius: 2px;
+    margin-bottom: 2vh;
+  }
+  .module:hover {
+    background-color: #eee;
+    cursor: pointer;
+    color: #607d8b;
+  }
+  .grid-pad {
+    padding: 10px 0;
+  }
+  .grid-pad > [class*='col-']:last-of-type {
+    padding-right: 20px;
+  }
+  @media (max-width: 600px) {
+    .module {
+      font-size: 10px;
+      max-height: 75px; }
+  }
+  @media (max-width: 1024px) {
+    .grid {
+      margin: 0;
+    }
+    .module {
+      min-width: 60px;
+    }
+  }
+
+  .employeeDetailsImage:hover{
+
+    width: 82%;
+    border: solid;
+    border-color:rgb(54, 185, 104);
+    border-radius: 20px;
+    box-shadow:dimgray 10px 2px 10px;
+    transition: width 0.5s;
+    transition-timing-function: ease-in;
+
+  }
+
+  .employeeDetailsImage{
+
+    width: 80%;
+    border: solid;
+    border-color:rgb(49, 135, 138);
+    border-radius: 20px;
+    box-shadow:dimgray 10px 2px 10px;
+
+  }

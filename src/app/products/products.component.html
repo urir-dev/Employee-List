@@ -1,0 +1,16 @@
+<div class="coloumHead">
+    Our Products
+</div>
+  <div class="grid grid-pad">
+    <div *ngFor="let product of products" class="col-1-4">
+      <a class="link" routerLink="/product-details/{{product.id}}">
+        <div>
+          <img src={{product.img}} class="employeeDetailsImage">
+        </div>
+        <div class="module employee">
+          <h3>{{product.name}}</h3>
+          <h3>{{product.price}} ₪ </h3>
+        </div>
+      </a>
+    </div>
+  </div>

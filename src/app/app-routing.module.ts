@@ -6,15 +6,19 @@ import { EmployeesOfTheMonthComponent } from './employees-of-the-month/employees
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 import { EditorComponent } from './editor/editor.component';
 import { StoryComponent } from './story/story.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
 
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/products', pathMatch: 'full' },
+  { path: 'products', component: ProductsComponent },
   { path: 'employees', component: EmployeesComponent },
   { path: 'employeesOfTheMonth', component: EmployeesOfTheMonthComponent },
   { path: 'Editor', component: EditorComponent },
   { path: 'details/:id', component: EmployeeDetailsComponent },
-  { path: 'story', component: StoryComponent }
+  { path: 'story', component: StoryComponent },
+  { path: 'product-details/:id', component: ProductDetailsComponent },
 
 ];
 

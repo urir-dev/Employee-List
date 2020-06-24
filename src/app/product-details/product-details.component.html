@@ -1,0 +1,36 @@
+<div class="detailsWrapper" *ngIf="product">
+
+    <div class="detailsBox">
+        <div class="coloumHead">
+            {{product.name | uppercase}}
+        </div>
+        <div class="twoGridDetails">
+            <div> 
+                <img src={{product.img}} class="employeeDetailsImage">
+            </div>
+            <div class="detailsGrid">
+                <div class="twoGrid">
+                    <label class = "greened" >id:</label>
+                    <div></div>
+                    <label class = "labelBox" > {{product.id}}</label>
+                </div>
+                <div class="twoGrid">
+                    <label class = "greened">Name:</label>
+                    <div></div>
+                    <input class="inputBox" [(ngModel)]="product.name" placeholder="Name"/>
+                </div>
+                <div class="twoGrid">
+                    <label class = "greened">Price:</label>
+                    <div></div>
+                    <input class="inputBox" [(ngModel)]="product.price" placeholder="Price"/>
+                </div>
+                <div class="twoGrid">
+                    <label class = "greened">Details:</label>
+                    <div></div>
+                    <textarea class="detailBox" [(ngModel)]="product.details" placeholder="Details">...</textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

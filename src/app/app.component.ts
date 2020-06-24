@@ -24,11 +24,11 @@ export class AppComponent {
 
     let userOfList: User;
 
-    userOfList = (USERLIST.find(user => user.userName === userInput || user.passWord === passInput));
+    userOfList = (USERLIST.find(user => user.userName === userInput && user.passWord === passInput));
     if (userOfList !== undefined) {
       this.isLoggedIn = true;
       this.userName =  userOfList.userName;
-      this.messageService.add(this.userName + 'Logged in successfully.' );
+      this.messageService.add(this.userName + ' Logged in successfully.' );
     }
     else {
       this.isLoggedIn = false;
